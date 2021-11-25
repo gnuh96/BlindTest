@@ -1,0 +1,43 @@
+Description des tables :
+
+Musique (idMusique, titre, date, #idGenre, #idCateg, #idHistorique)
+Auteur (idAuteur, nomArtiste)
+Compose (#idMusique, #idAuteur, idCompose)
+Historique (idHistorique, #idMusique, #token)
+Genre (idGenre, nomGenre)
+Catégorie (idCategorie, nomCateg)
+Partie (token, partage, nbJoueurs)
+Classement (idClassement, score, #token, #idJoueur)
+Joueur (idJoueur, pseudonyme, score)
+Jouer (#idJoueur, #token, idJouer)
+
+Quelques précisions :
+
+• La table musique regroupera les différentes musiques pour le Blind-Test, elles
+seront identifiées par un id, un titre et une date. Elles posséderont également un
+genre et une catégorie.
+
+• La table auteur regroupera les différents auteurs, ils seront caractérisés par un id,
+et un nom d’artiste. Une ou plusieurs musiques pourront être composées par un ou
+plusieurs auteurs.
+
+• La table genre regroupera les différents genres (sous-catégorie) du Blind-Test. Ils
+seront caractérisés par un id et un nom.
+
+• La table catégorie regroupera les catégories principales du Blind-Test qui seront
+identifiés par leurs id ainsi qu’un nom.
+
+• Une partie sera composée plusieurs musiques et est caractérisée par un token, une
+URL et un nombre de joueur. Une musique peut faire partie de plusieurs parties.
+Chaque partie est composée de plusieurs joueurs qui jouent à celle-ci.
+
+• Chaque partie possède un classement qui regroupe les scores, celui-ci est
+caractérisé par un id et un score. Chaque classement sera référencé à une partie
+ainsi qu’aux joueurs.
+
+• Les joueurs quant à eux, sont caractérisés par un id, un pseudonyme et un score.
+
+• La table historique permet de stocker les musiques jouées au cours d’une partie.
+Elle est caractérisée par un idHistorique, possède le token de partie, ainsi que l’id de
+la musique.
+
