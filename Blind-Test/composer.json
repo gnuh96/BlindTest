@@ -1,0 +1,16 @@
+{
+  "name": "Blind-Test.app",
+  "type": "project",
+  "author": "projet_tutoré",
+  "require": {
+    "illuminate/database": "5.5.*",
+    "php": ">=7.0",
+    "slim/slim": "2.*"
+  },
+
+  "autoload": {
+    "psr-4":{
+      "blindtest\\" : "src/"
+    }
+  }
+}

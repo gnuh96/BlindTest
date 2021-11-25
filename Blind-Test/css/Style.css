@@ -1,0 +1,307 @@
+header {
+    text-align:center;
+    padding-bottom:2%;
+    background-size: contain;
+}
+
+footer {
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+footer p{
+    color: white;
+}
+
+#footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:60px;
+    margin-left:-1px;
+}
+
+#footer2 {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    margin-left:-1px;
+}
+
+body {
+    background-color:#525252;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin-bottom:1%;
+}
+
+div {
+    margin-left: 5px;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    display: inline-block;
+}
+
+.main {
+    display: inline-block;
+    background-color: silver;
+    margin: 5% ;
+    width: 90% ;
+    height: 50em ;
+    border: 3px solid white;
+}
+
+.mainJeu {
+    display: inline-block;
+    background-color: silver;
+    margin: 5% ;
+    width: 90% ;
+    height: 25em ;
+    border: 3px solid white;
+}
+
+.mainPartage {
+    display: inline-block;
+    background-color: silver;
+    margin: 5% ;
+    width: 90% ;
+    height: 10em ;
+}
+
+.btn {
+    font-family: Cursive;
+    margin: 0 5px;
+}
+
+#jouer{
+    height: 10%;
+    width: 20%;
+}
+
+.grpBtn {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    margin-top: 25px;
+}
+
+.categorie {
+    display: inline-block;
+    background-color: ivory;
+    margin: 5% 2.5% 5% 5% ;
+    padding: 1em;
+    width: 42.5% ;
+    height: 60% ;
+}
+
+.shareLink{
+    color: black;
+    text-decoration: underline;
+}
+
+.shareLink :hover{
+    color: white;
+}
+
+.recap {
+    float: right;
+    display: inline-block;
+    background-color: whiteSmoke;
+    margin: 5% 5% 5% 2.5% ;
+
+    width: 42.5% ;
+    height: 60% ;
+}
+
+.cat {
+    display:block;
+}
+
+.col {
+    margin:10px;
+}
+
+.alert {
+    display: none;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.inforamtionsCompte{
+    margin-left : 50px;
+}
+
+.bonjour{
+    margin-top : 10px;
+}
+
+.deco{
+    margin-left: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-brand{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.vl {
+    border-left: 4px solid black;
+    height: 500px;
+    top: 0;
+}
+
+/* CSS LOGIN */
+.container{
+    height: 100%;
+    align-content: center;
+}
+
+.card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.7) !important;
+
+}
+
+#cardLogin{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border : 3px solid white;
+}
+
+.card-header h3{
+    color: white;
+}
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: white;
+    color: black;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+    color: white;
+}
+
+.remember input
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn{
+    color: black;
+    background-color: white;
+    width: 100px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: white;
+}
+
+.links a{
+    margin-left: 4px;
+}
+
+/* Animation loading */
+@keyframes blink {
+    /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+    0% {
+        opacity: .2;
+    }
+    /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+    20% {
+        opacity: 1;
+    }
+    /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+    100% {
+        opacity: .2;
+    }
+}
+
+.saving span {
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+
+    font-size: 72px;
+}
+
+.saving span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
+}
+
+
+
+
+
