@@ -1,0 +1,18 @@
+//////////////////////////
+////////Connexion////////
+////////////////////////
+
+userName = prugne2u
+password = 12345
+serverName = webetu.iutnc.univ-lorraine.fr
+portNumber = 3306
+dbName = prugne2u
+
+////////////////////////
+////////Config/////////
+//////////////////////
+
+Dossier musiques du projet = C:\wamp64\www\S3\s3c_s07_aubert_nguyen_prugne_vallera\blindtest\Musiques
+Dossier musiques du disque = C:\Users\legit\Music
+
+////////////////////
